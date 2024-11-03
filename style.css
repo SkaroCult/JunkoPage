@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    border: none;
+    overflow: hidden hidden;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background: url(archives/laincop.gif) center center no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main div img{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 40%;
+}
+main section#cont{
+    width: 100%;
+    height: 50%;
+    border: black solid 1px;
+    background-color: rgba(0, 0, 0, 0.411);
+    padding-left: 10em;
+
+    display: flex;
+    justify-content: center;
+}
+main section#cont section#name{
+    font-family: "Sixtyfour Convergence", sans-serif;
+
+    width: 50%;
+    margin-left: 5em;
+}
+main section#cont section#name h1{
+    font-size: 4em;
+    filter: sepia();
+}
+main section#cont section#name h2{
+    font-size: 2em;
+    filter:hue-rotate(4deg)
+}
+main section#cont section#name p:hover{
+    & span{
+        filter: opacity(100);
+        filter: sepia();
+    }
+}
+main section#cont section#name p span{
+    filter: opacity(0);
+}
